@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 17</title>
+<style>
+    h1 {
+        font-size: 30px;
+        background-color: pink;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .dark {
+        background-color: black;
+        color: white;
+    }
+    #blackButton:hover, #whiteButton:hover {
+        background-color: lightgrey;
+    }
+</style>
+</head>
+<body>
+    <h1>This is Lecture 17</h1>
+    <h3>Fruits</h3>
+    <ol>
+        <li>mango</li>
+        <li>apples</li>  
+        <li>strawberry</li>
+    </ol>
+    <p></p>
+    <button id="onClick">Click on⬆️</button>
+    <button id="offClick">click off⬇️</button>
+
+    <script>
+        let body = document.querySelector('body');
+        let blackBtn = document.getElementById('onClick');
+        let whiteBtn = document.getElementById('offClick');
+
+        blackBtn.onclick = () => {
+            body.classList.add('dark');
+        }
+
+        whiteBtn.onclick = () => {
+            body.classList.remove('dark');
+        }
+    </script>
+</body>
+</html>
